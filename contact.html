@@ -34,7 +34,9 @@
             <nav class="header__nav">
               <ul class="header__ul">
                 <li class="header__li item"><a href="index.html">Home</a></li>
-                <li class="header__li item"><a href="index.html#service">Service</a></li>
+                <li class="header__li item">
+                  <a href="index.html#service">Service</a>
+                </li>
                 <li class="header__li item">
                   <a class="btn filled" href="contact.html">Contact</a>
                 </li>
@@ -57,17 +59,41 @@
             </aside>
             <main>
               <div class="contact">
-                <div class="contact__inner">
-                  <h2 class="contact__title main-title">Contact Us</h2>
-                  <p class="sub-title">お問い合わせ</p>
-                  <div class="contact__maile">
-                    <p>メールでのお問い合わせは、こちらからお願いします。</p>
-                    <div class="contact__btn-container">
-                      <button class="btn letter-spacing" onclick="location.href='https://docs.google.com/forms/d/1xn--vs1VVS-VNcu08JPmW_py7J0amU_LReWidWgnniM/edit'">一般の方</button>
-                      <button class="btn letter-spacing" onclick="location.href='https://docs.google.com/forms/d/16RA4RcARz_ucu-DpggXWSaesVSGS52rcI4ZywgHgXGw/edit?usp=drive_web'">アイドルの方</button>
+                <div class="contact__inner appear left">
+                  <h2 class="contact__title main-title item">Contact Us</h2>
+                  <p class="sub-title item">お問い合わせ</p>
+                  <div class="contact__twitter item">
+                    <div class="exp">公式twitterはこちらから</div>
+                    <div class="link">
+                      <a href="https://twitter.com/metamusic365">
+                        <img src="images/twitter-icon.png" alt="">
+                      </a>
                     </div>
                   </div>
-                  <div class="contact__address">
+                  <div class="contact__maile item">
+                    <p class="mb">
+                      メールでのお問い合わせは、<br />こちらからお願いします。
+                    </p>
+                    <p class="pc">
+                      メールでのお問い合わせは、こちらからお願いします。
+                    </p>
+                    <div class="contact__btn-container">
+                      <button
+                        class="btn letter-spacing"
+                        onclick="location.href='https://docs.google.com/forms/d/1xn--vs1VVS-VNcu08JPmW_py7J0amU_LReWidWgnniM/edit'"
+                      >
+                        一般の方
+                      </button>
+                      <button
+                        class="btn letter-spacing"
+                        onclick="location.href='https://docs.google.com/forms/d/16RA4RcARz_ucu-DpggXWSaesVSGS52rcI4ZywgHgXGw/edit?usp=drive_web'"
+                      >
+                        アイドルの方
+                      </button>
+                    </div>
+                  </div>
+                  
+                  <div class="contact__address item">
                     <p class="font-lr">Address</p>
                     〒150-0002 東京都渋谷区渋谷2-19-15
                     <p>宮益坂ビルディング609</p>
@@ -91,8 +117,12 @@
           </div>
           <nav class="footer__nav">
             <ul class="footer__ul">
-              <li class="footer__li item"><a href="index.html#service">Service</a></li>
-              <li class="footer__li item"><a href="contact.html">Contact</a></li>
+              <li class="footer__li item">
+                <a href="index.html#service">Service</a>
+              </li>
+              <li class="footer__li item">
+                <a href="contact.html">Contact</a>
+              </li>
             </ul>
             <div class="footer__copyright item">&copy; Meta Music</div>
           </nav>

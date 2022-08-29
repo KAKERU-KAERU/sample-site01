@@ -7,7 +7,12 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   flex-direction: row;
   flex-wrap: wrap;
 }
-
+.mb {
+  display: none;
+}
+.pc {
+  display: block;
+}
 .nft {
   &__inner {
     padding: 50px;
@@ -87,30 +92,36 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 }
 
 .service {
-  &__container{
+  &__container {
     flex-direction: row;
   }
   &__item {
     flex-basis: 47%;
-
   }
-
-  
 }
 
-.contact{
-  
-  &__btn-container{
+.contact {
+  &__btn-container {
     flex-direction: row;
     justify-content: space-around;
-    &>button{
+    & > button {
       flex-basis: 35%;
     }
   }
-  
 }
 .logo-main {
-
   font-size: 5rem;
+}
 
+.news {
+  &__container {
+    flex-direction:row;
+    justify-content: space-between;
+  }
+  & .support-img {
+    flex-basis: 60%;
+  }
+  & .description {
+    flex-basis: 39%;
+  }
 }

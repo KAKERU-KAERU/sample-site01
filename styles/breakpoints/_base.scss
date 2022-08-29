@@ -38,6 +38,12 @@ img {
 .pb-lg {
   padding-bottom: 80px !important;
 }
+.mb {
+  display: block;
+}
+.pc {
+  display: none;
+}
 .content-width {
   width: 90%;
   margin: 0 auto;
@@ -209,8 +215,8 @@ main {
 .mission {
   @extend .content-width;
   @extend .mb-lg;
-  background-color: #eef3f3;
-  padding: 5px;
+  background-color:#bceff1;
+  padding: 15px;
 
   &__description {
     margin: 40px 0px 40px 0px;
@@ -249,18 +255,61 @@ main {
   }
 }
 
-.logo-main {
+.company {
   @extend .logo;
   @extend .flex;
   @extend .content-width;
   font-size: 3rem;
-  padding: 40px 0px 120px 0px;
+  padding: 10px 0px 90px 0px;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 50px;
 
   &__img {
     width: 1em;
     height: 100%;
+  }
+
+  &__container {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+
+.news {
+  @extend .content-width;
+  background-color: #aebfff;
+  color: black;
+  margin-bottom: $content-btm;
+  padding: 15px;
+
+  &__container {
+    padding: 30px;
+    @extend .flex;
+    flex-direction: column;
+    background-color: #dadff8;
+  }
+
+  & .support-img {
+    flex-basis: 100%;
+  }
+
+  & .description {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    text-align: center;
+    flex-basis: 100%;
+
+    & .mb {
+      margin-top: 20px;
+      flex-basis: 100%;
+      font-size: 1.7rem;
+    }
+    & .pc {
+      margin-top: 20px;
+      flex-basis: 100%;
+      font-size: 1.7rem;
+    }
   }
 }
 
@@ -428,7 +477,9 @@ main {
 
 .service {
   @extend .content-width;
-
+  background-color: #97d5c7;
+  margin-bottom: $content-btm;
+  padding: 15px;
   &__container {
     @extend .flex;
     flex-direction: column;
@@ -461,15 +512,24 @@ main {
 }
 
 .contact {
+  @extend .content-width;
   &__inner {
     text-align: center;
+    padding: 20px;
     padding-top: 130px;
     background-color: #96e5fd75;
-    @extend .content-width;
+    
   }
 
+  &__twitter{
+    & .exp{
+      margin-bottom: 15px;
+    }
+    padding: 30px;
+  }
   &__maile {
-    padding-top: 30px;
+    padding: 30px;
+    background-color:rgb(186, 222, 236); 
   }
   &__btn-container {
     @extend .flex;
