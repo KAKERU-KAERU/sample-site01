@@ -523,7 +523,16 @@ main {
 
   &__twitter{
     & .exp{
-      margin-bottom: 15px;
+      margin-bottom: 25px;
+    }
+
+    & .account{
+      font-size: 20px;
+    }
+    & .link{
+      & >a{
+        text-decoration: none;
+      }
     }
     padding: 30px;
   }

@@ -1587,7 +1587,15 @@ main {
 }
 
 .contact__twitter .exp {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.contact__twitter .account {
+  font-size: 20px;
+}
+
+.contact__twitter .link > a {
+  text-decoration: none;
 }
 
 .contact__maile {
