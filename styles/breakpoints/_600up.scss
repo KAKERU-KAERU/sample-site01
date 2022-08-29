@@ -1,0 +1,127 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+.flex {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.mb {
+  display: none;
+}
+.pc {
+  display: block;
+}
+.nft {
+  &__inner {
+    padding: 50px;
+  }
+  &__texts,
+  &__img {
+    flex-basis: 47%;
+  }
+
+  &__texts {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.header {
+  &__nav {
+    display: block;
+  }
+}
+
+.mobile-menu {
+  &__btn {
+    display: none;
+  }
+}
+
+.footer {
+  & .logo {
+    justify-content: flex-start;
+  }
+
+  &__li {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+}
+
+.hero {
+  &__title {
+    font-size: 25px;
+  }
+}
+
+.NFT {
+  &__explanation {
+    & .description {
+      & .main-description {
+        &.mb {
+          display: none;
+        }
+        &.pc {
+          display: block;
+        }
+      }
+    }
+
+    & .merit {
+      padding: 10px 90px;
+      & > li {
+        margin-top: 30px;
+        list-style: none;
+      }
+    }
+  }
+}
+
+.mission {
+  &__description {
+    & > h1 {
+      font-size: 1.8rem;
+    }
+    & .description {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.service {
+  &__container {
+    flex-direction: row;
+  }
+  &__item {
+    flex-basis: 47%;
+  }
+}
+
+.contact {
+  &__btn-container {
+    flex-direction: row;
+    justify-content: space-around;
+    & > button {
+      flex-basis: 35%;
+    }
+  }
+}
+.logo-main {
+  font-size: 5rem;
+}
+
+.news {
+  &__container {
+    flex-direction:row;
+    justify-content: space-between;
+  }
+  & .support-img {
+    flex-basis: 60%;
+  }
+  & .description {
+    flex-basis: 39%;
+  }
+}
