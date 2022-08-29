@@ -1,0 +1,17 @@
+em{
+    display: inline-block;
+    &::after{
+        content: "";
+        display: block;
+        width: 0%;
+        border-bottom: 2px solid #f00;
+    }
+
+}
+
+em.underline_active::after{
+    width: 100%;
+    transition: width ease 0.8s;
+}
+
+
