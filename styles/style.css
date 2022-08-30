@@ -1055,7 +1055,7 @@ img {
   border-radius: 20px;
 }
 
-.content-width, .header__inner, .nft, .mission, .company, .news, .NFT, .NFT__explanation .description, .service, .contact, .team {
+.content-width, .header__inner, .nft, .mission, .company, .news, .NFT, .NFT__explanation .description, .service, .contact {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
