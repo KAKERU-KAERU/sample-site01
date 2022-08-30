@@ -44,7 +44,7 @@ img {
 .pc {
   display: none;
 }
-.round{
+.round {
   border-radius: 20px;
 }
 .content-width {
@@ -218,7 +218,7 @@ main {
 .mission {
   @extend .content-width;
   @extend .mb-lg;
-  background-color:#bceff1;
+  background-color: #bceff1;
   padding: 15px;
 
   &__description {
@@ -287,8 +287,8 @@ main {
   margin-bottom: $content-btm;
   padding: 15px;
 
-  &__header{
-    text-align:center;
+  &__header {
+    text-align: center;
   }
   &__container {
     padding: 30px;
@@ -343,6 +343,11 @@ main {
     & > a {
       color: $cSubTitle;
     }
+  }
+
+  &__address {
+    margin: 30px;
+    color: $cSubTitle;
   }
 
   & .logo {
@@ -521,22 +526,21 @@ main {
     padding: 20px;
     padding-top: 130px;
     background-color: #aae7fa75;
-    
   }
 
-  &__twitter{
+  &__twitter {
     border: 5px dashed rgb(0, 80, 133);
     @extend .round;
     margin-bottom: 20px;
-    & .exp{
+    & .exp {
       margin-bottom: 25px;
     }
 
-    & .account{
+    & .account {
       font-size: 20px;
     }
-    & .link{
-      & >a{
+    & .link {
+      & > a {
         text-decoration: none;
       }
     }
@@ -544,7 +548,7 @@ main {
   }
   &__maile {
     padding: 30px;
-    background-color:rgb(186, 222, 236); 
+    background-color: rgb(186, 222, 236);
   }
   &__btn-container {
     @extend .flex;
@@ -556,6 +560,62 @@ main {
   }
   &__address {
     padding-top: 50px;
+  }
+}
+
+.team {
+  @extend .content-width;
+  background-color: #6ac1b7;
+  margin-top: 100px;
+  padding: 15px;
+  &__header {
+    text-align: center;
+  }
+
+  &__item {
+    padding: 30px;
+    @extend .flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+    background-color: #dfefed;
+    & .role {
+      width: 150px;
+      text-align: center;
+      font-size: 1.3rem;
+      flex-basis: 100%;
+      margin-bottom: 20px;
+      background-color: #bac4c7;
+    }
+
+    & .name {
+      align-items: center;
+      text-align: center;
+      font-size: 1.5rem;
+      flex-basis: 100%;
+
+      & > p {
+        font-size: 1.2rem;
+        margin: 0;
+      }
+    }
+
+    & .SNS {
+      align-items: center;
+      text-align: center;
+      font-size: 0.9rem;
+      flex-basis: 100%;
+      font-size: 1.3rem;
+
+      &-item {
+        & > a {
+          color: #005bcd;
+          text-decoration: none;
+          margin-left: 20px;
+        }
+      }
+    }
   }
 }
 

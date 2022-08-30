@@ -125,3 +125,31 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     flex-basis: 39%;
   }
 }
+
+
+.contact {
+  &__twitter{
+    border: 0px dashed rgb(0, 80, 133);
+  }
+  
+}
+
+.team {
+
+  &__item {
+    flex-direction: row;
+    
+    & .role {
+      flex-basis: 61%;
+    }
+
+    & .name {
+      flex-basis: 40%;
+    }
+
+    & .SNS {
+      flex-basis: 30%;
+
+    }
+  }
+}

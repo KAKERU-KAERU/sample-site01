@@ -1055,7 +1055,7 @@ img {
   border-radius: 20px;
 }
 
-.content-width, .header__inner, .nft, .mission, .company, .news, .NFT, .NFT__explanation .description, .service, .contact {
+.content-width, .header__inner, .nft, .mission, .company, .news, .NFT, .NFT__explanation .description, .service, .contact, .team {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -1071,7 +1071,7 @@ img {
   color: #535353;
 }
 
-.flex, .nft__inner, .company, .news__container, .footer__nav, .footer__ul, .service__container, .contact__btn-container {
+.flex, .nft__inner, .company, .news__container, .footer__nav, .footer__ul, .service__container, .contact__btn-container, .team__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1387,6 +1387,11 @@ main {
   color: #535353;
 }
 
+.footer__address {
+  margin: 30px;
+  color: #535353;
+}
+
 .footer .logo, .footer .company {
   font-size: 38px;
   -webkit-box-pack: center;
@@ -1623,6 +1628,73 @@ main {
   padding-top: 50px;
 }
 
+.team {
+  background-color: #6ac1b7;
+  margin-top: 100px;
+  padding: 15px;
+}
+
+.team__header {
+  text-align: center;
+}
+
+.team__item {
+  padding: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+  background-color: #dfefed;
+}
+
+.team__item .role {
+  width: 150px;
+  text-align: center;
+  font-size: 1.3rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-bottom: 20px;
+  background-color: #bac4c7;
+}
+
+.team__item .name {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.team__item .name > p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.team__item .SNS {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 0.9rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-size: 1.3rem;
+}
+
+.team__item .SNS-item > a {
+  color: #005bcd;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
 #service {
   padding-top: 200px;
   margin-top: -200px;
@@ -1642,7 +1714,7 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
-  .flex, .nft__inner, .company, .news__container, .footer__nav, .footer__ul, .service__container, .contact__btn-container {
+  .flex, .nft__inner, .company, .news__container, .footer__nav, .footer__ul, .service__container, .contact__btn-container, .team__item {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1749,6 +1821,27 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .news .description {
     -ms-flex-preferred-size: 39%;
         flex-basis: 39%;
+  }
+  .contact__twitter {
+    border: 0px dashed #005085;
+  }
+  .team__item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .team__item .role {
+    -ms-flex-preferred-size: 61%;
+        flex-basis: 61%;
+  }
+  .team__item .name {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  .team__item .SNS {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
   }
 }
 
