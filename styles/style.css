@@ -1051,6 +1051,10 @@ img {
   display: none;
 }
 
+.round, .news, .news__container, .contact__twitter {
+  border-radius: 20px;
+}
+
 .content-width, .header__inner, .nft, .mission, .company, .news, .NFT, .NFT__explanation .description, .service, .contact {
   width: 90%;
   margin: 0 auto;
@@ -1318,6 +1322,10 @@ main {
   padding: 15px;
 }
 
+.news__header {
+  text-align: center;
+}
+
 .news__container {
   padding: 30px;
   -webkit-box-orient: vertical;
@@ -1340,14 +1348,7 @@ main {
       flex-basis: 100%;
 }
 
-.news .description .mb {
-  margin-top: 20px;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  font-size: 1.7rem;
-}
-
-.news .description .pc {
+.news .description > p {
   margin-top: 20px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -1579,10 +1580,12 @@ main {
   text-align: center;
   padding: 20px;
   padding-top: 130px;
-  background-color: #96e5fd75;
+  background-color: #aae7fa75;
 }
 
 .contact__twitter {
+  border: 5px dashed #005085;
+  margin-bottom: 20px;
   padding: 30px;
 }
 
