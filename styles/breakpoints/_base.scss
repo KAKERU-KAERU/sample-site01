@@ -517,6 +517,10 @@ main {
       font-size: 5px;
     }
   }
+
+  &__btn{
+    text-align: center
+  }
 }
 
 .contact {
@@ -564,7 +568,7 @@ main {
 }
 
 .team {
-  // @extend .content-width;
+  overflow: hidden;
   background-color: #6ac1b7;
   margin-top: 100px;
   padding: 15px;
@@ -603,7 +607,6 @@ main {
 
     & .SNS {
       align-items: center;
-      text-align: center;
       font-size: 0.9rem;
       flex-basis: 100%;
       font-size: 1.3rem;
