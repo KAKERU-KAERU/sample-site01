@@ -650,6 +650,7 @@ main {
 }
 
 .team {
+  @extend .content-width;
   overflow: hidden;
   background-color: #6ac1b7;
   margin-top: 100px;
