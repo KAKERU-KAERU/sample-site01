@@ -128,6 +128,9 @@ main {
   & .logo {
     font-size: 38px;
     justify-content: center;
+    &>a{
+      text-decoration: none;
+    }
   }
 
   &__inner {

@@ -1161,6 +1161,10 @@ main {
           justify-content: center;
 }
 
+.header .logo > a, .header .company > a {
+  text-decoration: none;
+}
+
 .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
