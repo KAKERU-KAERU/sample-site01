@@ -483,6 +483,85 @@ main {
   }
 }
 
+.client {
+  @extend .content-width;
+  padding-top: 100px;
+  position: relative;
+  overflow: hidden;
+
+  background-color: #c9daf9;
+
+  &__title{
+    text-align: center;
+  }
+
+  & .exp{
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  &__explanation {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &.for {
+      
+      margin: 30px;
+      color: #486063;
+    }
+
+    &.profit {
+      margin: 30px;
+      background-color: #e5f7ff;
+      color: #486063;
+    }
+
+    &.fun {
+      margin: 30px;
+      background-color: #f1effb;
+      color: #486063;
+    }
+    & .title {
+      text-align: center;
+    }
+
+    & .description {
+      text-align: center;
+      & .main-description {
+        font-size: 1.1rem;
+
+        &>a{
+          text-decoration: none;
+          color: #6137e1;
+          font-weight: 600;
+        }
+      }
+
+      margin-top: 50px;
+      font-size: 1rem;
+      @extend.content-width;
+    }
+
+    & .market-img {
+      margin-top: 50px;
+      text-align: center;
+
+      & > img {
+        text-align: center;
+        width: 90%;
+      }
+    }
+
+    & .merit {
+      padding: 10px 10px;
+      & > li {
+        text-align: center;
+        margin-top: 30px;
+        list-style: none;
+      }
+    }
+  }
+}
+
 .service {
   @extend .content-width;
   background-color: #97d5c7;
@@ -622,7 +701,12 @@ main {
   }
 }
 
-#service {
+#service{
+  padding-top: 200px;
+  margin-top: -200px;
+}
+
+#second-market{
   padding-top: 200px;
   margin-top: -200px;
 }

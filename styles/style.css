@@ -1056,7 +1056,7 @@ img {
   border-radius: 20px;
 }
 
-.content-width, .header__inner, .nft, .mission, .company, .news, .NFT, .NFT__explanation .description, .service, .contact {
+.content-width, .header__inner, .nft, .mission, .company, .news, .NFT, .NFT__explanation .description, .client, .client__explanation .description, .service, .contact {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -1540,6 +1540,84 @@ main {
   list-style: none;
 }
 
+.client {
+  padding-top: 100px;
+  position: relative;
+  overflow: hidden;
+  background-color: #c9daf9;
+}
+
+.client__title {
+  text-align: center;
+}
+
+.client .exp {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.client__explanation {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.client__explanation.for {
+  margin: 30px;
+  color: #486063;
+}
+
+.client__explanation.profit {
+  margin: 30px;
+  background-color: #e5f7ff;
+  color: #486063;
+}
+
+.client__explanation.fun {
+  margin: 30px;
+  background-color: #f1effb;
+  color: #486063;
+}
+
+.client__explanation .title {
+  text-align: center;
+}
+
+.client__explanation .description {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1rem;
+}
+
+.client__explanation .description .main-description {
+  font-size: 1.1rem;
+}
+
+.client__explanation .description .main-description > a {
+  text-decoration: none;
+  color: #6137e1;
+  font-weight: 600;
+}
+
+.client__explanation .market-img {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.client__explanation .market-img > img {
+  text-align: center;
+  width: 90%;
+}
+
+.client__explanation .merit {
+  padding: 10px 10px;
+}
+
+.client__explanation .merit > li {
+  text-align: center;
+  margin-top: 30px;
+  list-style: none;
+}
+
 .service {
   background-color: #97d5c7;
   margin-bottom: 50px;
@@ -1701,6 +1779,11 @@ main {
 }
 
 #service {
+  padding-top: 200px;
+  margin-top: -200px;
+}
+
+#second-market {
   padding-top: 200px;
   margin-top: -200px;
 }
